@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 plt.style.use('ggplot')
-# plt.title('花瓣宽度分布', fontproperties=myfont)
+# plt.title('花瓣宽度分布', fontproperties=cnFont)
 
 cnFont = matplotlib.font_manager.FontProperties(fname='./font/SimHei.ttf')
 mpl.rcParams['font.sans-serif'] = ['SimHei']
@@ -36,6 +36,5 @@ ax[1][1].hist(df['花萼长度'], color='black')
 ax[1][1].set_ylabel('数量', fontsize=12, fontproperties=cnFont)
 ax[1][1].set_xlabel('长度', fontsize=12, fontproperties=cnFont)
 ax[1][1].set_title('花萼长度分布', fontproperties=cnFont)
-
 
 plt.show()
